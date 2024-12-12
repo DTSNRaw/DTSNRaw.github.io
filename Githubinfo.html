@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>About Me</title>
+    <style>
+        /* Animated background from black to blue */
+        body {
+            font-family: 'Comic Sans MS', sans-serif;
+            color: black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            flex-direction: column;
+            background: linear-gradient(45deg, black, blue);
+            background-size: 400% 400%;
+            animation: gradientAnimation 5s ease infinite;
+        }
+
+        /* Animation to change the gradient */
+        @keyframes gradientAnimation {
+            0% {
+                background-position: 0% 50%;
+            }
+            50% {
+                background-position: 100% 50%;
+            }
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 36px;
+            color: #fff;
+            margin-bottom: 20px;
+        }
+
+        .about-container {
+            text-align: center;
+            font-size: 20px;
+            padding: 30px;
+            border-radius: 25px;
+            background: rgba(0, 0, 0, 0.7); /* semi-transparent black */
+            color: white;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+            margin-bottom: 30px;
+            width: 80%;
+            max-width: 600px;
+        }
+
+        .about-container a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 10px 20px;
+            background-color: #333;
+            border-radius: 20px;
+            margin-top: 20px;
+            display: inline-block;
+            transition: background-color 0.3s ease;
+        }
+
+        .about-container a:hover {
+            background-color: #555;
+        }
+
+        .contact-info {
+            font-size: 18px;
+        }
+
+        .contact-info a {
+            color: #333;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .contact-info a:hover {
+            text-decoration: underline;
+        }
+
+        /* Button Style */
+        .back-button {
+            padding: 10px 20px;
+            font-size: 18px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 15px;
+            cursor: pointer;
+            margin-top: 20px;
+            transition: background-color 0.3s ease;
+        }
+
+        .back-button:hover {
+            background-color: #45a049;
+        }
+
+    </style>
+</head>
+<body>
+
+    <h1>About Me</h1>
+
+    <div class="about-container">
+        <p>Hello! I like to make little programs! :</p>
+        <div class="contact-info">
+            <p>Contact me via email: <a href="mailto:dotsond3455@student.faytechcc.edu">My email</a></p>
+        </div>
+    </div>
+
+    <div class="about-container">
+        <p>Click below to visit my GitHub:</p>
+        <a href="https://github.com/DTSNRaw/CTI-110" target="_blank">Go to my GitHub</a>
+    </div>
+
+    <!-- Back to Index Button -->
+    <button class="back-button" onclick="window.location.href='index.html'">Back to Index</button>
+
+</body>
+</html>

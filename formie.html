@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Python Questions</title>
+    <style>
+        /* Set the background GIF */
+        body {
+            background-image: url('rainbow.gif');  /* Set background GIF */
+            background-size: cover;
+            background-position: center center;
+            background-repeat: no-repeat;
+            height: 100vh;
+            margin: 0;
+            padding: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: 'Comic Sans MS', sans-serif;
+            color: white;
+        }
+
+        /* Centering the form */
+        form {
+            background-color: rgba(0, 0, 0, 0.7);  /* Transparent black background */
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            width: 90%;
+            max-width: 900px;
+            text-align: center;
+            border: 3px solid transparent;
+            background-image: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
+            background-origin: border-box;  /* Ensure the gradient applies to the border */
+            background-clip: content-box, border-box; /* Allow content area to be transparent while keeping the rainbow border */
+        }
+
+        h1 {
+            color: #fff;  /* White color to contrast the rainbow background */
+            background: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
+            -webkit-background-clip: text;
+            color: transparent;
+            font-size: 28px;
+            margin-bottom: 20px;
+        }
+
+        .question {
+            margin-bottom: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .question label {
+            font-size: 18px;
+            display: block;
+            margin: 10px 0;
+            background: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
+            -webkit-background-clip: text;
+            color: transparent;
+            transition: transform 0.3s ease;
+        }
+
+        .question label:hover {
+            transform: scale(1.1);
+        }
+
+        /* Align the radio buttons horizontally */
+        .options {
+            display: flex;
+            justify-content: space-around;
+            width: 100%;
+        }
+
+        input[type="radio"] {
+            margin: 0 10px;
+            transform: scale(1.2);
+        }
+
+        /* Submit button styling */
+        input[type="submit"] {
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            margin-top: 10px;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+
+        /* Main Page button styling */
+        .main-page-btn {
+            margin-top: 20px;
+            padding: 10px 20px;
+            background: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
+            border: none;
+            color: white;
+            font-size: 18px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+
+        .main-page-btn:hover {
+            background: linear-gradient(to right, violet, indigo, blue, green, yellow, orange, red);
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Form with Python questions -->
+    <form>
+        <h1>Python Quiz</h1>
+
+        <!-- Question 1 -->
+        <div class="question">
+            <label for="question1">1. How do you make a print statement in Python?</label>
+            <div class="options">
+                <input type="radio" id="q1a" name="q1" value="print('Hello World')">
+                <label for="q1a">print('Hello World')</label>
+                <input type="radio" id="q1b" name="q1" value="echo('Hello World')">
+                <label for="q1b">echo('Hello World')</label>
+                <input type="radio" id="q1c" name="q1" value="echo Hello World">
+                <label for="q1c">echo Hello World</label>
+            </div>
+        </div>
+
+        <!-- Question 2 -->
+        <div class="question">
+            <label for="question2">2. What is the keyword used to define a function in Python?</label>
+            <div class="options">
+                <input type="radio" id="q2a" name="q2" value="def">
+                <label for="q2a">def</label>
+                <input type="radio" id="q2b" name="q2" value="function">
+                <label for="q2b">function</label>
+                <input type="radio" id="q2c" name="q2" value="define">
+                <label for="q2c">define</label>
+            </div>
+        </div>
+
+        <!-- Question 3 -->
+        <div class="question">
+            <label for="question3">3. What is the correct syntax to create a list in Python?</label>
+            <div class="options">
+                <input type="radio" id="q3a" name="q3" value="[1, 2, 3]">
+                <label for="q3a">[1, 2, 3]</label>
+                <input type="radio" id="q3b" name="q3" value="(1, 2, 3)">
+                <label for="q3b">(1, 2, 3)</label>
+                <input type="radio" id="q3c" name="q3" value="{1, 2, 3}">
+                <label for="q3c">{1, 2, 3}</label>
+            </div>
+        </div>
+
+        <!-- Question 4 -->
+        <div class="question">
+            <label for="question4">4. Which of the following is a correct way to add an element to a list?</label>
+            <div class="options">
+                <input type="radio" id="q4a" name="q4" value="list.append(5)">
+                <label for="q4a">list.append(5)</label>
+                <input type="radio" id="q4b" name="q4" value="list.add(5)">
+                <label for="q4b">list.add(5)</label>
+                <input type="radio" id="q4c" name="q4" value="list.insert(5)">
+                <label for="q4c">list.insert(5)</label>
+            </div>
+        </div>
+
+        <!-- Question 5 -->
+        <div class="question">
+            <label for="question5">5. What does the 'len()' function do in Python?</label>
+            <div class="options">
+                <input type="radio" id="q5a" name="q5" value="It returns the length of an object">
+                <label for="q5a">It returns the length of an object</label>
+                <input type="radio" id="q5b" name="q5" value="It adds a number to the object">
+                <label for="q5b">It adds a number to the object</label>
+                <input type="radio" id="q5c" name="q5" value="It deletes an object">
+                <label for="q5c">It deletes an object</label>
+            </div>
+        </div>
+
+        <!-- Submit button -->
+        <input type="submit" value="Submit">
+
+        <!-- Main Page button -->
+       <a href="Index.html">Back</a>
+    </form>
+
+</body>
+</html>
